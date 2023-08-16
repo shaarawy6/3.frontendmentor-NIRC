@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body{
+    background-color: #141519;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    background-color:#212832;
+    border-radius: 25px;
+    padding: 0 30px;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.star{
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #33373d;
+    margin-top: 10px;
+}
+
+p{
+    opacity: 30%;
+}
+
+.all-rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-rating .rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.default-color{
+    background-color: #33373d;
+}
+
+.all-rating .rating:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+.all-rating .rating:hover p{
+    opacity: 1;
+}
+
+/* javaScript */
+.clicked-color{
+    background-color: hsl(216, 12%, 54%);
+}
+
+.clicked-color p{
+    opacity: 1;
+}
+
+.button{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(25, 97%, 53%);
+    width: 350px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button p{
+    opacity: 1;
+}
+
+.button:hover{
+    background-color: white;
+}
+
+.button:hover p{
+    color: hsl(25, 97%, 53%);
+}
+
+
+
+/* second */
+#second{
+    background-color:#212832;
+    border-radius: 25px;
+    padding: 0 30px;
+    height: 350px;
+    width: 350px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.selection{
+    background-color: #33373d;
+    border-radius: 50px;
+    height: 30px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    color: hsl(25, 97%, 53%);
+    width: max-content;
+    padding: 0 20px;
+}
+
+.selection p{
+    opacity: 1;
+}
+
+.words p{
+    font-size: 15.5px;
+}
+
+@media(max-width:375px){
+    body{
+        transform: scale(0.5);
+    }
+}
